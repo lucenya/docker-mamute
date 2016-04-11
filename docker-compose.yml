@@ -30,11 +30,6 @@ mamute:
     MAMUTE_ENABLE_SIGNUP: "true"
     MAMUTE_ATTACHMENTS_PATH: /opt/attachments
     MAIL_SERVER: smtp.company.com
-    LDAP_HOST: ldap.company.com
-    LDAP_USER: "CN=mamuteauth,OU=Users,DC=company,DC=com"
-    LDAP_MODERATOR_GROUP: "CN=Moderators,OU=Groups,DC=company,DC=com"
-    LDAP_PASS: secretpassword
-    LDAP_USERDN: "OU=Users,DC=company,DC=com"
 
 nginx:
   container_name: nginx-mamute
