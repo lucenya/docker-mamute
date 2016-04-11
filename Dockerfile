@@ -20,6 +20,8 @@ ENV VRAPTOR_ENV=production \
     MAMUTE_HOST=localhost \
     MAMUTE_PORT=80 \
     MAMUTE_ENABLE_SIGNUP=true \
+    MAMUTE_ENABLE_SOLR=true \
+    MAMUTE_ATTACHMENTS_PATH=/tmp \
     \
     DB_HOST=mysql \
     DB_PORT=3306 \
@@ -39,7 +41,9 @@ ENV VRAPTOR_ENV=production \
     LDAP_USER=user \
     LDAP_PASS=pass \
     LDAP_USERDN="OU=Users,DC=company,DC=com" \
+    LDAP_GROUP_ATTR=memberOf \
     LDAP_MODERATOR_GROUP="CN=Moderators,OU=Groups,DC=company,DC=com" \
+    \
     LDAP_USE_SSL=false
 
 EXPOSE 80

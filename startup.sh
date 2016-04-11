@@ -47,7 +47,10 @@ use.routes.parser.hack=false
 feature.facebook.login = false
 feature.google.login = false
 
+feature.solr = ${MAMUTE_ENABLE_SOLR}
 feature.signup=${MAMUTE_ENABLE_SIGNUP}
+
+attachments.root.fs.path = ${MAMUTE_ATTACHMENTS_PATH}
 EOF
 }
 
@@ -80,6 +83,7 @@ ldap.emailAttr=mail
 ldap.nameAttr=givenName
 ldap.surnameAttr=sn
 ldap.userDn=${LDAP_USERDN}
+ldap.groupAttr=${LDAP_GROUP_ATTR}
 ldap.moderatorGroup=${LDAP_MODERATOR_GROUP}
 ldap.useSSL=${LDAP_USE_SSL}
 EOF
