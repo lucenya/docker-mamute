@@ -38,6 +38,7 @@ To configure the **Mamute** properly, the following environment variables can be
 
 ## Mamute behaviour
 The following will control the behavior of **Mamute** execution:
+
 | Environment Name            | Default Value | Description                                                          |
 | :-------------------------- | :------------ | :------------------------------------------------------------------- |
 | **MAMUTE_HOST**             | localhost     | _Host Name/IP Address_ of Mamute (external IP/FQDN)                  |
@@ -48,6 +49,7 @@ The following will control the behavior of **Mamute** execution:
 
 ## MySQL Database Configuration
 The following control the parameters of the MySQL database to connect to and store the data in:
+
 | Environment Name | Default Value | Description                                       |
 | :--------------- | :------------ | :------------------------------------------------ |
 | **DB_HOST**      | mysql         | _Host Name/IP Address_ of the MySQL server to use |
@@ -58,6 +60,7 @@ The following control the parameters of the MySQL database to connect to and sto
 
 ## Mail Server Configuration
 The following control the mail server configuration:
+
 | Environment Name   | Default Value      | Description                                        |
 | :----------------- | :----------------- | :------------------------------------------------- |
 | **MAIL_SERVER**    | smtp.sample.server | _Host Name/IP Address_ of the mail server          |
@@ -69,6 +72,7 @@ The following control the mail server configuration:
 | **MAIL_FROM_NAME** |"Mamute System"     | The e-mail name to use for automated e-mails       |
 
 ## LDAP Authentication Configuration
+
 | Environment Name         | Default Value                               | Description                                          |
 | :----------------------- | :------------------------------------------ | :--------------------------------------------------- |
 | **LDAP_PORT**            | 389                                         | LDAP port                                            |
