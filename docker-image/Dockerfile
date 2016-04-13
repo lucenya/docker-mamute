@@ -43,7 +43,6 @@ ENV VRAPTOR_ENV=production \
     LDAP_USERDN="OU=Users,DC=company,DC=com" \
     LDAP_GROUP_ATTR=memberOf \
     LDAP_MODERATOR_GROUP="CN=Moderators,OU=Groups,DC=company,DC=com" \
-    \
     LDAP_USE_SSL=false
 
 EXPOSE 80
