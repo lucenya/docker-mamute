@@ -7,7 +7,9 @@ ENV VERSION=1.4.0
 RUN mkdir /opt/mamute
 WORKDIR /opt/mamute
 
-RUN wget --no-check-certificate -nv https://github.com/caelum/mamute/releases/download/v${VERSION}/mamute-${VERSION}.war && \
+#RUN wget --no-check-certificate -nv https://github.com/caelum/mamute/releases/download/v${VERSION}/mamute-${VERSION}.war && \
+    ADD mamute-1.4.0.war .
+RUN \
     unzip mamute-${VERSION}.war && \
     rm mamute-${VERSION}.war
 
