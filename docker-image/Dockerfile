@@ -22,6 +22,7 @@ ENV VRAPTOR_ENV=production \
     MAMUTE_HOST=localhost \
     MAMUTE_PORT=80 \
     MAMUTE_ENABLE_SIGNUP=true \
+    MAMUTE_ALLOW_QUESTION_DELETE=true \
     MAMUTE_ENABLE_SOLR=true \
     MAMUTE_ATTACHMENTS_PATH=/tmp \
     \
