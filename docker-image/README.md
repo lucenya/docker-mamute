@@ -39,13 +39,14 @@ To configure the **Mamute** properly, the following environment variables can be
 ## Mamute behaviour
 The following will control the behavior of **Mamute** execution:
 
-| Environment Name            | Default Value | Description                                                          |
-| :-------------------------- | :------------ | :------------------------------------------------------------------- |
-| **MAMUTE_HOST**             | localhost     | _Host Name/IP Address_ of Mamute (external IP/FQDN)                  |
-| **MAMUTE_PORT**             | 80            | Internal port to use, should not be changed                          |
-| **MAMUTE_ENABLE_SIGNUP**    | true          | Enable signup for users. When using LDAP consider to disable it      |
-| **MAMUTE_ENABLE_SOLR**      | true          | Enable SOLR Indexing engine for enabling searching the database      |
-| **MAMUTE_ATTACHMENTS_PATH** | /tmp          | Location where attachments are stored, it's recommended to change it |
+| Environment Name                 | Default Value | Description                                                             |
+| :------------------------------- | :------------ | :---------------------------------------------------------------------- |
+| **MAMUTE_HOST**                  | localhost     | _Host Name/IP Address_ of Mamute (external IP/FQDN)                     |
+| **MAMUTE_PORT**                  | 80            | Internal port to use, should not be changed                             |
+| **MAMUTE_ENABLE_SIGNUP**         | true          | Enable signup for users. When using LDAP consider to disable it         |
+| **MAMUTE_ALLOW_QUESTION_DELETE** | true          | Allow owner/moderator to delete own question or full thread (moderator) |
+| **MAMUTE_ENABLE_SOLR**           | true          | Enable SOLR Indexing engine for enabling searching the database         |
+| **MAMUTE_ATTACHMENTS_PATH**      | /tmp          | Location where attachments are stored, it's recommended to change it    |
 
 ## MySQL Database Configuration
 The following control the parameters of the MySQL database to connect to and store the data in:
@@ -65,7 +66,7 @@ The following control the mail server configuration:
 | :----------------- | :----------------- | :------------------------------------------------- |
 | **MAIL_SERVER**    | smtp.sample.server | _Host Name/IP Address_ of the mail server          |
 | **MAIL_PORT**      | 25                 | SMTP server port to use                            |
-| **MAIL_USE_TLS**   | false              | Enable the use of TLS                              | 
+| **MAIL_USE_TLS**   | false              | Enable the use of TLS                              |
 | **MAIL_USERNAME**  | user               | The username to use for authenticated mail server  |
 | **MAIL_PASSWORD**  | password           | The password to use for authenticated mail server  |
 | **MAIL_FROM**      | no-reply@null.com  | The e-mail address to use in the automated e-mails |

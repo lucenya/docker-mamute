@@ -49,6 +49,7 @@ feature.google.login = false
 
 feature.solr = ${MAMUTE_ENABLE_SOLR}
 feature.signup=${MAMUTE_ENABLE_SIGNUP}
+deletable.questions = ${MAMUTE_ALLOW_QUESTION_DELETE}
 
 attachments.root.fs.path = ${MAMUTE_ATTACHMENTS_PATH}
 EOF
