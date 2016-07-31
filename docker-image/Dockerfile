@@ -2,13 +2,13 @@ FROM java:8-jdk
 MAINTAINER John Basila (jbasila@gmail.com)
 
 # Mamute version
-ENV VERSION=1.4.0
+ENV VERSION=1.3.0
 
 RUN mkdir /opt/mamute
 WORKDIR /opt/mamute
 
-#RUN wget --no-check-certificate -nv https://github.com/caelum/mamute/releases/download/v${VERSION}/mamute-${VERSION}.war && \
-    ADD mamute-1.4.0.war .
+RUN wget --no-check-certificate -nv https://github.com/caelum/mamute/releases/download/v${VERSION}/mamute-${VERSION}.war
+    #ADD mamute-${VERSION}.war .
 RUN \
     unzip mamute-${VERSION}.war && \
     rm mamute-${VERSION}.war
