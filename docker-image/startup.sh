@@ -39,7 +39,7 @@ EOF
 
 conf_basic() {
   cat <<EOF
-host=http://${MAMUTE_HOST}:${MAMUTE_PORT}
+host=http://${MAMUTE_RETURN_HOST}:${MAMUTE_RETURN_PORT}
 home.url=/
 mail_logo_url=http://${MAMUTE_HOST}:${MAMUTE_PORT}/imgs/logo-mail.png
 use.routes.parser.hack=false
